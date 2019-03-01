@@ -4,7 +4,7 @@ A WordPress child theme by Juan Gallardo created for a personal art project.
 
 Based on [Maker](https://wordpress.org/themes/maker/) theme by Dmitry Mayorov.
 
-##Demo 
+## Demo 
 
 Example on art blog at [combat.io](http://combat.io/)
 
