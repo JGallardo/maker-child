@@ -1,0 +1,461 @@
+/*
+Theme Name: Maker Child
+description: >-
+  A child theme of Maker
+Author: Juan Gallardo
+Author URI: http://jgallardo.me
+Template: maker
+Version: 1.0.0
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Stardos+Stencil');
+
+/* Header
+================== */
+.site-header {
+	padding: 2.5em 0;
+}
+
+.site-title {
+	font-family: 'Stardos Stencil', cursive;
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+.site-title a {
+	-webkit-transition: color 0.25s ease;
+  	transition: color 0.25s ease;
+}
+.site-title a:hover {
+	color: #47864C !important; /* changed color from #f45844 */
+}
+
+p.site-description {
+	font-size: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+	.blog .entry-header, .archive .entry-header, .single-post .entry-header {
+		float: left;
+		width: 30.0813%;
+		margin-right: 4.87805%;
+	}
+	.blog .entry-meta {
+		width: 100%;
+		font-size: 0.75rem;
+	}
+}
+
+.entry-content {
+	margin-bottom: 0.5rem;
+}
+figure.wp-block-image {
+	margin-bottom: 0;	
+}
+h2.entry-title {
+	font-size: 1rem;
+	margin-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+	h1.entry-title {
+		font-size: 1rem;
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.single-post .entry-footer {
+		float: left;
+	}
+}
+
+
+/* Footer
+================== */
+.site-info {
+	float: left !important;
+	text-align: left;
+	width: 100% !important;
+}
+
+@media screen and (min-width: 1024px) {
+	.site-info {
+		float: left !important;
+		width: 100% !important;
+	}	
+}
+
+.site-info span {
+	display: inline-block;
+	transform: rotate(180deg);
+}
+
+
+/* Links */
+a {
+	color: #47864C; /* changed color from #f45844 */
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:hover,
+a:active {
+	outline: 0;
+	text-decoration: none !important;
+}
+
+a:focus {
+	outline: thin dotted;
+	outline: 5px auto -webkit-focus-ring-color;
+	outline-offset: -2px;
+	text-decoration: none !important;
+}
+
+/**
+ * Components.
+ */
+
+/* Buttons */
+/* change buttons to green*/
+.btn,
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+	display: inline-block;
+	height: 3em;
+	margin: 0;
+	padding: 0.875em 1.25em;
+	border: 2px solid;
+	border-color: rgba(88, 88, 88, 0.2);
+	border-radius: 3px;
+	-webkit-appearance: none;
+	color: #585858;
+	background-color: rgba(88, 88, 88, 0.2);
+	background-image: none;
+	font-size: 1em;
+	font-weight: bold;
+	line-height: 1;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	text-decoration: none;
+	cursor: pointer;
+
+	-ms-touch-action: manipulation;
+	    touch-action: manipulation;
+}
+
+.btn:hover,
+button:hover,
+input[type='button']:hover,
+input[type='reset']:hover,
+input[type='submit']:hover {
+	box-shadow: inset 0 0 108px rgba(255, 255, 255, 0.5);
+	text-decoration: none;
+}
+
+.btn:active,
+button:active,
+input[type='button']:active,
+input[type='reset']:active,
+input[type='submit']:active {
+	outline: 0;
+	box-shadow: inset 0 0 108px rgba(255, 255, 255, 0.5);
+	text-decoration: none;
+}
+
+.btn:focus,
+button:focus,
+input[type='button']:focus,
+input[type='reset']:focus,
+input[type='submit']:focus {
+	outline: thin dotted;
+	outline: 5px auto -webkit-focus-ring-color;
+	outline-offset: -2px;
+	box-shadow: inset 0 0 108px rgba(255, 255, 255, 0.2);
+	text-decoration: none;
+}
+
+.btn.btn-accent {
+	border-color: #47864C; /* custom theme - green */
+	color: #fff;
+	background-color: #47864C; /* custom theme - green */
+}
+
+.btn.btn-success {
+	border-color: #1fc281;
+	color: #fff;
+	background-color: #1fc281;
+}
+
+.btn.btn-info {
+	border-color: #00b9f2;
+	color: #fff;
+	background-color: #00b9f2;
+}
+
+.btn.btn-warning {
+	border-color: #f4cc31;
+	color: #fff;
+	background-color: #f4cc31;
+}
+
+.btn.btn-danger {
+	border-color: #e83337;
+	color: #fff;
+	background-color: #e83337;
+}
+
+/* Forms */
+input[type='text'],
+input[type='email'],
+input[type='url'],
+input[type='password'],
+input[type='search'],
+input[type='number'],
+input[type='date'],
+input[type='datetime'],
+input[type='datetime-local'],
+input[type='month'],
+input[type='time'],
+input[type='week'],
+input[type='tel'],
+textarea {
+	width: 100%;
+	padding: 0.625em 1em;
+	border: 2px solid;
+	border-color: rgba(88, 88, 88, 0.2);
+	border-radius: 3px;
+	-webkit-appearance: none;
+	color: #585858;
+	background-color: transparent;
+	box-shadow: none;
+	font-size: 16px;
+	font-size: 1rem;
+	line-height: 24px;
+	line-height: 1.5rem;
+	vertical-align: middle;
+}
+
+::-webkit-input-placeholder {
+	opacity: 0.5;
+	color: #585858;
+	text-overflow: ellipsis;
+}
+
+::-moz-placeholder {
+	opacity: 0.5;
+	color: #585858;
+	text-overflow: ellipsis;
+}
+
+:-moz-placeholder {
+	opacity: 0.5;
+	color: #585858;
+	text-overflow: ellipsis;
+}
+
+input:-ms-input-placeholder {
+	opacity: 0.5;
+	color: #585858;
+	text-overflow: ellipsis;
+}
+
+:focus::-webkit-input-placeholder {
+	color: transparent;
+}
+
+:focus::-moz-placeholder {
+	color: transparent;
+}
+
+:focus:-moz-placeholder {
+	color: transparent;
+}
+
+input:focus:-ms-input-placeholder {
+	color: transparent;
+}
+
+.post-password-form {
+	position: relative;
+}
+
+.post-password-form label {
+	display: block;
+}
+
+.post-password-form input[type='submit'] {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+.search-form {
+	position: relative;
+	margin-bottom: 1.5em;
+}
+
+.search-submit {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+input[type='submit'].search-submit {
+	border-color: #47864C; /* custom theme - green */
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	color: #fff;
+	background-color: #47864C; /* custom theme - green */
+}
+
+/* Primary Menu */
+
+.main-navigation {
+	width: 100%;
+}
+
+.main-navigation ul {
+	display: none;
+	margin: 0 0 1.5em 0;
+	padding: 0;
+	list-style: none;
+}
+
+.main-navigation ul ul {
+	display: block;
+	margin: 0;
+	padding: 0 0 0 1em;
+}
+
+.main-navigation li {
+	margin-bottom: 0;
+}
+
+.main-navigation.toggled ul {
+	display: block;
+}
+
+.main-navigation a {
+	display: block;
+	padding: 0.75em 0.75em 0.75em 0;
+	color: #1e1e1e;
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus,
+.main-navigation a:active {
+	color: #47864C; /* custom theme - green */
+}
+
+.widget a {
+	color: #585858;
+	-webkit-transition: color 0.25s ease;
+  	transition: color 0.25s ease;
+}
+
+.widget a:hover,
+.widget a:active,
+.widget a:focus {
+	opacity: 1;
+	color: #47864C; /* custom theme - green */
+}
+
+
+/* Entry Meta */
+.entry-meta-item {
+	display: block;
+}
+
+.entry-meta-item a {
+	opacity: 0.5;
+	color: #585858;
+}
+
+.entry-meta-item a:hover,
+.entry-meta-item a:focus {
+	opacity: 1;
+	color: #47864C; /* custom theme - green */
+}
+
+.entry-meta-icon {
+	display: block;
+	float: left;
+	width: 1em;
+	height: 1.5em;
+	margin-right: 0.25em;
+	opacity: 0.5;
+
+	fill: currentColor;
+}
+
+.entry-meta-item.cat-links {
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: normal;
+	line-height: 1.5;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.entry-meta-item.cat-links a {
+	opacity: 1;
+	color: #47864C; /* custom theme - green */
+}
+
+.byline,
+.updated:not(.published) {
+	display: none;
+}
+
+.group-blog .byline {
+	display: block;
+}
+
+.tags-links a {
+	display: inline-block;
+	margin-right: 0.5em;
+	opacity: 0.5;
+	color: #585858;
+}
+
+.tags-links a:hover,
+.tags-links a:focus {
+	opacity: 1;
+	color: #47864C; /* custom theme - green */
+}
+
+.tags-links a:before {
+	content: '#';
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+
+/* comments*/
+.comment-form .submit {
+	border-color: #47864C; /* custom theme - green */
+	color: #fff;
+	background-color: #47864C; /* custom theme - green */
+}
+
+/* single portfolio*/
+.single-portfolio .project-meta-cats,
+.single-portfolio .project-meta-tags,
+.single-jetpack-portfolio .project-meta-cats,
+.single-jetpack-portfolio .project-meta-tags {
+	color: #47864C; /* custom theme - green */
+}
+
+
+/* Contact Form 7 */
+input[type='submit'].wpcf7-submit {
+	border-color: #47864C; /* custom theme - green */
+	color: #fff;
+	background-color: #47864C; /* custom theme - green */
+}
